@@ -1,0 +1,9 @@
+#include "Pods-theMostAmazingFinalProject-SCNetworkReachability.xcconfig"
+CONFIGURATION_BUILD_DIR = $PODS_FRAMEWORK_BUILD_PATH
+FRAMEWORK_SEARCH_PATHS = "$PODS_FRAMEWORK_BUILD_PATH"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/SCNetworkReachability" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/SCNetworkReachability" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/macros_blocks"
+OTHER_LDFLAGS = ${PODS_THEMOSTAMAZINGFINALPROJECT_SCNETWORKREACHABILITY_OTHER_LDFLAGS} -ObjC
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-theMostAmazingFinalProject
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController">
+            <connections>
+                <outlet property="btnPostActivity" destination="RQr-Oz-7xa" id="Nbc-Pk-o0U"/>
+                <outlet property="btnViewProgress" destination="BOy-He-5S9" id="CEv-L8-922"/>
+                <outlet property="lblPostActivity" destination="cs4-Hs-RjP" id="Jba-IF-KxA"/>
+                <outlet property="lblViewProgress" destination="npu-Db-muB" id="Mfo-P6-e9h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-He-5S9" customClass="OBShapedButton">
+                    <rect key="frame" x="91" y="331" width="139" height="139"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="139" id="8Xq-J7-vz4"/>
+                        <constraint firstAttribute="width" constant="139" id="Gjf-3I-cHl"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="progress_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnViewProgressPressed:" destination="-1" eventType="touchUpInside" id="4xC-y1-5R7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npu-Db-muB">
+                    <rect key="frame" x="106" y="478" width="109" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="C6C-pB-ZCH"/>
+                        <constraint firstAttribute="width" constant="109" id="gFa-SA-Tdc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtG-1a-siZ">
+                    <rect key="frame" x="139" y="273" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-Oz-7xa" customClass="OBShapedButton">
+                    <rect key="frame" x="91" y="100" width="139" height="139"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="139" id="jsS-Ga-JaJ"/>
+                        <constraint firstAttribute="width" constant="139" id="lkG-GB-EIb"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="post_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnPostActivityPressed:" destination="-1" eventType="touchUpInside" id="vdK-ea-4sw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Activity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs4-Hs-RjP">
+                    <rect key="frame" x="112" y="71" width="96" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="edE-Kn-q5p"/>
+                        <constraint firstAttribute="height" constant="21" id="pI8-5j-jKK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="npu-Db-muB" firstAttribute="top" secondItem="BOy-He-5S9" secondAttribute="bottom" constant="8" symbolic="YES" id="221-e9-MbY"/>
+                <constraint firstItem="BOy-He-5S9" firstAttribute="top" secondItem="HtG-1a-siZ" secondAttribute="bottom" constant="37" id="415-O6-k1n"/>
+                <constraint firstAttribute="centerX" secondItem="BOy-He-5S9" secondAttribute="centerX" id="8nQ-Fs-FBo"/>
+                <constraint firstItem="HtG-1a-siZ" firstAttribute="top" secondItem="RQr-Oz-7xa" secondAttribute="bottom" constant="34" id="CJV-7p-VLO"/>
+                <constraint firstItem="RQr-Oz-7xa" firstAttribute="top" secondItem="cs4-Hs-RjP" secondAttribute="bottom" constant="8" symbolic="YES" id="DOa-cG-cri"/>
+                <constraint firstAttribute="centerY" secondItem="HtG-1a-siZ" secondAttribute="centerY" id="PTB-Ea-3PX"/>
+                <constraint firstAttribute="centerX" secondItem="npu-Db-muB" secondAttribute="centerX" id="YMo-QW-0yp"/>
+                <constraint firstAttribute="centerX" secondItem="HtG-1a-siZ" secondAttribute="centerX" id="gsf-8E-EnW"/>
+                <constraint firstAttribute="centerX" secondItem="RQr-Oz-7xa" secondAttribute="centerX" id="j0A-R5-HCr"/>
+                <constraint firstAttribute="centerX" secondItem="cs4-Hs-RjP" secondAttribute="centerX" id="tqa-zG-lrd"/>
+            </constraints>
+            <point key="canvasLocation" x="245" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post_icon" width="1024" height="1024"/>
+        <image name="progress_icon" width="512" height="512"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

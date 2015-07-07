@@ -1,0 +1,6 @@
+framework module SCNetworkReachability {
+  umbrella header "Pods-theMostAmazingFinalProject-SCNetworkReachability-umbrella.h"
+
+  export *
+  module * { export * }
+}

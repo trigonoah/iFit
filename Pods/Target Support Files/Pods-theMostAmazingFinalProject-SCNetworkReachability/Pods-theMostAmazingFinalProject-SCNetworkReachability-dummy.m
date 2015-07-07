@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_theMostAmazingFinalProject_SCNetworkReachability : NSObject
+@end
+@implementation PodsDummy_Pods_theMostAmazingFinalProject_SCNetworkReachability
+@end

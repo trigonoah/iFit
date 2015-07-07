@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CookingViewController">
+            <connections>
+                <outlet property="btnSearchForRecipes" destination="gqq-pW-tKQ" id="mLz-zw-WBC"/>
+                <outlet property="btnViewSavedRecipes" destination="p3p-sn-JpG" id="Ynp-OK-xZ5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqq-pW-tKQ">
+                    <rect key="frame" x="96" y="105" width="128" height="128"/>
+                    <state key="normal" image="search_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSearchForRecipesPressed:" destination="-1" eventType="touchUpInside" id="aeX-xI-pH8"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-b9-IuW">
+                    <rect key="frame" x="139" y="273" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3p-sn-JpG">
+                    <rect key="frame" x="96" y="337" width="128" height="128"/>
+                    <state key="normal" image="favorites_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnViewSavedRecipesPressed:" destination="-1" eventType="touchUpInside" id="Nvj-bA-XQ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="tCL-b9-IuW" secondAttribute="centerY" id="PG1-wA-nIg"/>
+                <constraint firstAttribute="centerX" secondItem="tCL-b9-IuW" secondAttribute="centerX" id="S9h-AR-epf"/>
+                <constraint firstItem="p3p-sn-JpG" firstAttribute="leading" secondItem="gqq-pW-tKQ" secondAttribute="leading" id="WOR-sd-vug"/>
+                <constraint firstItem="p3p-sn-JpG" firstAttribute="top" secondItem="tCL-b9-IuW" secondAttribute="bottom" constant="43" id="fsO-3Y-MJR"/>
+                <constraint firstItem="tCL-b9-IuW" firstAttribute="top" secondItem="gqq-pW-tKQ" secondAttribute="bottom" constant="40" id="hrW-95-MFF"/>
+                <constraint firstItem="gqq-pW-tKQ" firstAttribute="centerX" secondItem="tCL-b9-IuW" secondAttribute="centerX" id="yGt-P3-NQL"/>
+            </constraints>
+            <point key="canvasLocation" x="245" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favorites_icon" width="128" height="128"/>
+        <image name="search_icon" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

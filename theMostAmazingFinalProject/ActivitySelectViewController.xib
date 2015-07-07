@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitySelectViewController">
+            <connections>
+                <outlet property="lblActivityEquipment" destination="P89-f5-wKi" id="pxi-96-Jlg"/>
+                <outlet property="lblStartDateTime" destination="Uff-HV-d8Y" id="6Bu-lt-S9h"/>
+                <outlet property="pickerActivity" destination="cAc-hQ-sBF" id="fpi-gZ-CfQ"/>
+                <outlet property="pickerDateTime" destination="69h-N6-Zxi" id="N8J-QV-wfB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="69h-N6-Zxi">
+                    <rect key="frame" x="0.0" y="342" width="320" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="455142084.42666203">
+                        <!--2015-06-04 20:21:24 +0000-->
+                    </date>
+                </datePicker>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL1-ja-0Mp">
+                    <rect key="frame" x="139" y="273" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAc-hQ-sBF">
+                    <rect key="frame" x="0.0" y="103" width="320" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1iT-F5-hb1"/>
+                        <outlet property="delegate" destination="-1" id="xQK-fZ-Syo"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your activity and equipment:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P89-f5-wKi">
+                    <rect key="frame" x="32" y="82" width="256" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date/time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uff-HV-d8Y">
+                    <rect key="frame" x="100" y="321" width="120" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="69h-N6-Zxi" firstAttribute="top" secondItem="Uff-HV-d8Y" secondAttribute="bottom" id="173-lh-7Ic"/>
+                <constraint firstItem="cAc-hQ-sBF" firstAttribute="leading" secondItem="69h-N6-Zxi" secondAttribute="leading" id="7PR-bX-W9o"/>
+                <constraint firstItem="Uff-HV-d8Y" firstAttribute="top" secondItem="cL1-ja-0Mp" secondAttribute="bottom" constant="27" id="8vZ-L9-vF8"/>
+                <constraint firstItem="cAc-hQ-sBF" firstAttribute="centerX" secondItem="P89-f5-wKi" secondAttribute="centerX" id="BQX-uC-J6H"/>
+                <constraint firstItem="P89-f5-wKi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="82" id="JSV-q5-D5m"/>
+                <constraint firstItem="cAc-hQ-sBF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jso-me-jH4"/>
+                <constraint firstItem="cAc-hQ-sBF" firstAttribute="top" secondItem="P89-f5-wKi" secondAttribute="bottom" id="NTJ-wW-lsj"/>
+                <constraint firstItem="cL1-ja-0Mp" firstAttribute="top" secondItem="cAc-hQ-sBF" secondAttribute="bottom" constant="8" symbolic="YES" id="XDW-QM-h8X"/>
+                <constraint firstItem="cAc-hQ-sBF" firstAttribute="centerX" secondItem="cL1-ja-0Mp" secondAttribute="centerX" id="iaD-OO-0so"/>
+                <constraint firstItem="cL1-ja-0Mp" firstAttribute="centerX" secondItem="Uff-HV-d8Y" secondAttribute="centerX" id="odn-9n-qgL"/>
+            </constraints>
+            <point key="canvasLocation" x="245" y="322"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
